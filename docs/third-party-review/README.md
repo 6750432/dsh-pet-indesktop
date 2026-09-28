@@ -35,6 +35,26 @@ bug 级的条目已经单独提到 Issues 里了（DB-001 ~ DB-011）。
    **注意**：你们仓库里其实**已经有这个机制的雏形了**（外部角色目录），
    §5.1 先把这个前提写清楚了，不是另起炉灶。
 
+## 对应的 Issues
+
+bug 级的 11 条已经单独提到 Issues 里了，编号对照如下（点编号直达）：
+
+| 编号 | Issue | 级别 | 证据 |
+|---|---|---|---|
+| DB-001 | [#195](https://github.com/MerZlin/dsh-pet-indesktop/issues/195) 素材与画布不符 → 整块窗口吞鼠标 | 高 | 🟢 实测 |
+| DB-002 | [#201](https://github.com/MerZlin/dsh-pet-indesktop/issues/201) 首帧长度校验失败是静默的 | 中 | 🔵 静态 |
+| DB-003 | [#199](https://github.com/MerZlin/dsh-pet-indesktop/issues/199) 非 Windows 回退播放器的子进程从不回收 | 中 | 🟢 实测 |
+| DB-004 | [#200](https://github.com/MerZlin/dsh-pet-indesktop/issues/200) `bounded_data()` 遇超大字段清空整份 data | 中 | 🟢 实测 |
+| DB-005 | [#196](https://github.com/MerZlin/dsh-pet-indesktop/issues/196) 主动记忆文件多实例共享且无锁读改写 | 中高 | 🟢 实测 |
+| DB-006 | [#204](https://github.com/MerZlin/dsh-pet-indesktop/issues/204) 主动记忆落盘缺 `fsync` | 低 | 🔵 静态 |
+| DB-007 | [#206](https://github.com/MerZlin/dsh-pet-indesktop/issues/206) `ProactiveMemory` docstring 与实现矛盾 | 低 | 🔵 静态 |
+| DB-008 | [#205](https://github.com/MerZlin/dsh-pet-indesktop/issues/205) 槽位 seed 配置非原子写 | 低 | 🔵 静态 |
+| DB-009 | [#202](https://github.com/MerZlin/dsh-pet-indesktop/issues/202) 3 处 `assert` 当运行期校验 | 低 | 🟢 实测 |
+| DB-010 | [#203](https://github.com/MerZlin/dsh-pet-indesktop/issues/203) `parse_agent_event()` 不校验 `schema` 值 | 低 | 🟢 实测 |
+| DB-011 | [#207](https://github.com/MerZlin/dsh-pet-indesktop/issues/207) 10 个模块在测试里完全没被提到 | 提示 | 🔵 静态 |
+
+（另有 #197 / #198 两条是我发重了、已自行关闭并注明重复，忽略即可。）
+
 ## 我们不打算做的事
 
 - 不催、不设期限。这些是"如果你们想做"的备选，不是 TODO 清单。
